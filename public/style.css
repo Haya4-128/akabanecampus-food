@@ -745,7 +745,6 @@ nav .inner ul li a:hover {
 .criteria ul li span {
     font-family: var(--font-en);
     margin-right: 20px;
-    font-weight: bold;
 }
 
 .coming-soon {
@@ -770,10 +769,6 @@ nav .inner ul li a:hover {
 .cs-date {
     color: #888;
     font-size: 12px;
-}
-
-.cs-shop {
-    font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
