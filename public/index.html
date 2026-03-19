@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="images/logo1.png">
+            </div> 
+            <div id="navArea">
+                <nav>
+                    <div class="inner">
+                        <ul>
+                            <li><a href="#top"><span>TOP</span></a></li>
+                            <li><a href="#shop list"><span>SHOP LIST</span></a></li>
+                            <li><a href="#map"><span>MAP</span></a></li>
+                            <li><a href="#gallery"><span>GALLERY</span></a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="toggle_btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div id="mask"></div>
+            </div>
+        </div>
+    </header>
+    <div class="fv">
+        <div class="fv-inner">
+            <img src="images/image.png">
+        </div>
+    </div>
+    <div class="container">
+        <section id="concept">
+            <h5>concept</h5>
+            <div class="vertical-line"></div>
+            <p>
+                赤羽台キャンパスに通う現役学生が、<br>
+                <span class="mini">実際に足を運んで『<span class="osi">ここは推し！</span>』</span><br>
+                と思ったお店だけをまとめています。<br>
+                おしゃれな喫茶店から、<br class="sp-only">
+                お腹いっぱいになれる定食屋まで。<br>
+                今日のランチの参考にどうぞ。
+            </p>
+        </section>
+        <section id="shoplist">
+            <h1>SHOP LIST</h1>
+            <div class="search-wrapper">
+                <div class="search-tag-container">
+                    <span class="search-text">Search by Tag</span>
+                    <span class="arrow"></span>
+                </div>
+            </div>
+            <div class="tag-filter-area">
+                <ul class="tag-list">
+                    <li data-filter="all"><span>#すべて</span></li>
+                    <li data-filter="#コスパ〇"><span>#コスパ〇</span></li>
+                    <li data-filter="#タイパ命"><span>#タイパ命</span></li>
+                    <li data-filter="#一人OK"><span>#一人OK</span></li>
+                </ul>
+            </div>
+            <div class="shopall">
+                    <div class="shop-card-container" data-tag="#コスパ〇">
+                        <button class="card-image-button openModalBtn"
+                            data-shopname="糖朝CAFE" 
+                            data-image="images/image01.png" 
+                            data-caption="安くて早い安定のキャンパス飯"
+                            data-genre="中華"
+                            data-payment="現金のみ"
+                            data-budget="¥500〜"
+                            data-distance="0分"
+                            data-taipa="◎"
+                            data-kospa="◎"
+                            data-mapurl="https://goo.gl/maps/..."
+                        >
+                            <div class="card-image-wrapper">
+                                <img src="images/image01.png" alt="糖朝">
+                            </div>
+                        </button>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span>#コスパ〇</span>
+                            </div>
+                            <h3 class="card-shop-name">糖 朝</h3>
+                            <p class="card-description">安くて早い安定のキャンパス飯</p>
+                        </div>
+                    </div>
+
+                    <div class="shop-card-container" data-tag="#タイパ命 #コスパ〇">
+                        <button class="card-image-button openModalBtn"
+                            data-shopname="サイゼリヤ" 
+                            data-image="images/image02.png" 
+                            data-caption="圧倒的安さ！！"
+                            data-genre="洋食"
+                            data-payment="キャッシュレス対応"
+                            data-budget="¥500〜"
+                            data-distance="徒歩2分"
+                            data-taipa="〇"
+                            data-kospa="◎"
+                            data-mapurl="https://goo.gl/maps/..."
+                        >
+                            <div class="card-image-wrapper">
+                                <img src="images/image01.png" alt="サイゼリヤ">
+                            </div>
+                        </button>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span>#タイパ命</span><span>#コスパ〇</span>
+                            </div>
+                            <h3 class="card-shop-name">サイゼリヤ</h3>
+                            <p class="card-description">圧倒的安さ！！</p>
+                        </div>
+                    </div>
+
+                    <div class="shop-card-container" data-tag="#コスパ〇 #1人OK ">
+                        <button class="card-image-button openModalBtn"
+                            data-shopname="ベンディカ" 
+                            data-image="images/image03.png" 
+                            data-caption="学割があってお得~"
+                            data-genre="インド料理"
+                            data-payment="キャッシュレス対応"
+                            data-budget="¥1000〜"
+                            data-distance="徒歩7分"
+                            data-taipa="〇"
+                            data-kospa="〇"
+                            data-mapurl="https://goo.gl/maps/..."
+                        ></button>
+                            <div class="card-image-wrapper">
+                                <img src="images/image03.png" alt="サイゼリヤ">
+                            </div>
+                        </button>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span>#コスパ〇</span><span>#1人OK</span>
+                            </div>
+                            <h3 class="card-shop-name">ベンディカ</h3>
+                            <p class="card-description">圧倒的安さ！！</p>
+                        </div>
+                    </div>
+
+                    <div class="shop-card-container" data-tag="#1人OK">
+                        <button class="card-image-button openModalBtn"
+                            data-shopname="パンチャンとジョン" 
+                            data-image="images/image04.png" 
+                            data-caption="赤羽女子に話題韓国料理"
+                            data-genre="韓国料理"
+                            data-payment="キャッシュレス対応"
+                            data-budget="¥1000〜"
+                            data-distance="徒歩10分"
+                            data-taipa="〇"
+                            data-kospa="△"
+                            data-mapurl="https://goo.gl/maps/..."
+                        ></button>
+                            <div class="card-image-wrapper">
+                                <img src="images/image04.png">
+                            </div>
+                        </button>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span>#1人OK</span>
+                            </div>
+                            <h3 class="card-shop-name">パンチャンとジョン</h3>
+                            <p class="card-description">赤羽女子に話題の韓国料理</p>
+                        </div>
+                    </div>
+
+                    <div class="shop-card-container" data-tag="#コスパ〇 #1人OK">
+                        <button class="card-image-button openModalBtn"
+                            data-shopname="昔ながらの喫茶店 友路有" 
+                            data-image="images/image05.png" 
+                            data-caption="写真映え！！レトロな喫茶店で"
+                            data-genre="洋食"
+                            data-payment="キャッシュレス対応"
+                            data-budget="¥500〜"
+                            data-distance="徒歩12分"
+                            data-taipa="〇"
+                            data-kospa="◎"
+                            data-mapurl="https://goo.gl/maps/..."
+                        ></button>
+                            <div class="card-image-wrapper">
+                                <img src="images/image05.png">
+                            </div>
+                        </button>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span>#コスパ〇</span><span>#1人OK</span>
+                            </div>
+                            <h3 class="card-shop-name">喫茶店友路有</h3>
+                            <p class="card-description">写真映え！！昔ながらの喫茶店で</p>
+                        </div>
+                    </div>
+
+                    <div class="shop-card-container" data-tag="#コスパ〇 #1人OK">
+                        <button class="card-image-button openModalBtn"
+                            data-shopname="赤羽ラーメン粋" 
+                            data-image="images/image06.png" 
+                            data-caption="ごはんお代わり自由がコスパ〇"
+                            data-genre="ラーメン"
+                            data-payment="カード・電子マネー可"
+                            data-budget="¥800〜"
+                            data-distance="徒歩15分"
+                            data-taipa="◎"
+                            data-kospa="◎"
+                            data-mapurl="https://goo.gl/maps/..."
+                        >
+                            <div class="card-image-wrapper">
+                                <img src="images/image06.jpg">
+                            </div>
+                        </button>
+                        <div class="card-content">
+                            <div class="card-tags">
+                                <span>#コスパ〇</span><span>#1人OK</span>
+                            </div>
+                            <h3 class="card-shop-name">赤羽ラーメン粋</h3>
+                            <p class="card-description">ごはんお代わり自由がコスパ〇</p>
+                        </div>
+                    </div>
+            </div>
+                <section id="modalArea" class="modalArea">
+                    <div id="modalBg" class="modalBg"></div>
+                    <div class="modalWrapper">
+                        <div class="modalContents">
+                        <div class="modal-image-box">
+                                <img src="images/image01.png">
+                                <span class="image-caption">安くて早い安定の<br>キャンパス飯</span>
+                            </div>
+
+                            <div class="modal-tags">
+                                <span>#作業OK</span>
+                                <span>#作業OK</span>
+                            </div> 
+                            <h1 class="shop-title">糖 朝</h1>
+                            <div class="shop-details">
+                                <div class="detail-item"><span>ジャンル</span><span>： 中華</span></div>
+                                <div class="detail-item"><span>支払い方法</span><span>： 現金のみ</span></div>
+                                <div class="detail-item"><span>予算</span><span>： ¥500</span></div>
+                                <div class="detail-item"><span>大学からの距離</span><span>： 徒歩5分</span></div>
+                                <div class="detail-item"><span>タイパ</span><span>： ◯</span></div>
+                                <div class="detail-item"><span>コスパ</span><span>： ◯</span></div>
+                            </div>
+                            <a href="https://goo.gl/maps/..." target="_blank" class="map-btn"><p>GoogleMapへ</p></a>
+                        </div>
+                        <div id="closeModal" class="closeModal">
+                        ×
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <section id="map">
+            <h1>MAP</h1>
+            <div class="mapcontent">
+                <div class="mapimage">
+                    <img src="images/map.png">
+                </div>
+                <div class="shopname">
+                    <ul class="shop-grid">
+                        <li><span class="icon">📍</span> 01 糖朝CAFE</li>
+                        <li><span class="icon">📍</span> 05 喫茶店友路有</li>
+                        <li><span class="icon">📍</span> 02 サイゼリヤ</li>
+                        <li><span class="icon">📍</span> 06 赤羽ラーメン粋</li>
+                        <li><span class="icon">📍</span> 03 ベンディカ</li>
+                        <li><span class="icon">📍</span> 07 吟風</li>
+                        <li><span class="icon">📍</span> 04 パンチャンとジョン</li>
+                        <li><span class="icon">📍</span> 08 赤羽屋</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h1>GALLERY</h1>
+            <div class="gallery-grid">
+                <div class="item item-large"><img src="images/image01.png" alt=""></div>
+                <div class="item"><img src="images/image02.png" alt=""></div>
+                <div class="item"><img src="images/image03.png" alt=""></div>
+                <div class="item  item-large"><img src="images/image04.png"></div>
+                <div class="item"><img src="images/image05.png" alt=""></div>
+                <div class="item"><img src="images/image06.jpg" alt=""></div>
+            </div>
+        </section>
+    </div>
+    <footer>
+
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(function () {
+
+    $('.tag-list li').click(function () {
+        const filter = $(this).attr('data-filter');
+
+        $('.tag-list li').removeClass('is-active');
+        $(this).addClass('is-active');
+        $('.shop-card-container').each(function () {
+            const itemTag = $(this).attr('data-tag');
+
+            if (filter === 'all') {
+                $(this).fadeIn(300);
+            } else if (itemTag && itemTag.indexOf(filter) !== -1) {
+                $(this).fadeIn(300);
+            } else {
+                $(this).fadeOut(300);
+            }
+        });
+    });
+
+    $('.openModalBtn').click(function () {
+   
+    const name = $(this).data('shopname');
+    const img = $(this).data('image');
+    const caption = $(this).data('caption');
+    const genre = $(this).data('genre');
+    const payment = $(this).data('payment');
+    const budget = $(this).data('budget');
+    const distance = $(this).data('distance');
+    const map = $(this).data('mapurl');
+
+    const $modal = $('#modalArea');
+    $modal.find('.shop-title').text(name);
+    $modal.find('.modal-image-box img').attr('src', img);
+    $modal.find('.image-caption').html(caption);
+    
+   
+    const details = $modal.find('.detail-item span:last-child');
+    $(details[0]).text('： ' + genre);
+    $(details[1]).text('： ' + payment);
+    $(details[2]).text('： ' + budget);
+    $(details[3]).text('： ' + distance);
+
+   
+    $modal.find('.map-btn').attr('href', map);
+
+    $modal.fadeIn();
+});
+
+    $('#closeModal, #modalBg').click(function () {
+        $('#modalArea').fadeOut();
+    });
+});
+        $(function () {
+  $('#openModal').click(function(){
+      $('#modalArea').fadeIn();
+  });
+  $('#closeModal , #modalBg').click(function(){
+    $('#modalArea').fadeOut();
+  });
+});
+
+
+    (function($) {
+  var $nav   = $('#navArea');
+  var $btn   = $('.toggle_btn');
+  var $mask  = $('#mask');
+  var $links = $('nav a');
+  var open   = 'open';
+
+  $btn.on( 'click', function() {
+    if ( ! $nav.hasClass( open ) ) {
+      $nav.addClass( open );
+    } else {
+      $nav.removeClass( open );
+    }
+  });
+
+  $mask.on('click', function() {
+    $nav.removeClass( open );
+  });
+
+  $links.on('click', function() {
+    $nav.removeClass( open );
+  });
+  
+})(jQuery);
+    </script>
+</body>
+</html>
